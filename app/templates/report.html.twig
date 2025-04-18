@@ -1,0 +1,59 @@
+{% extends "base.html.twig" %}
+
+{% block title %}Report{% endblock %}
+
+
+{% block body %}
+    <h1>Report</h1>
+    <h2>Report sidan inkluderar samtliga redovisningstexter för varje kursmoment.</h2>
+    <nav class="nav-report">
+        <ul>
+            <li><a href="{{ path('report') }}#kmom01">kmom01</a></li>
+            <li><a href="{{ path('report') }}#kmom02">kmom02</a></li>
+            <li><a href="{{ path('report') }}#kmom03">kmom03</a></li>
+            <li><a href="{{ path('report') }}#kmom04">kmom04</a></li>
+            <li><a href="{{ path('report') }}#kmom05">kmom05</a></li>
+            <li><a href="{{ path('report') }}#kmom06">kmom06</a></li>
+            <li><a href="{{ path('report') }}#kmom10">kmom10</a></li>
+        </ul>
+    </nav>
+
+    <section id="kmom01">
+        <h2>Redovisningstext kmom01</h2>
+        <p>Jag fick lära mig en del av objektorientering under kursen OOPython, dock är det fortfarande klurigt och svårt hanterabart. Jag fick även öva med att skapa routes samt att jobba med objekt och klasser. Det kändes som en introduktion kurs av objektorienterad programmering.</p>
+        <p>För att komma igång med klasser och objekt, är det väsenligt att förstå och urskilja samtliga begrepp, exmpelvis en klass är lik en mall för att skapa objekt medan ett objekt är en instans av en klass. En variabel är definierad inuti en klass och den kan vara publik eller privat. Metoder är funktioner som beskriver vad objektet kan göra. Även konstruktor och ärv är viktiga att förstå när man börjar med klasser.</p>
+        <p>Koden i uppgiften me/report är uppdelad i olika komponenter. Controller mappen innehåller alla controller (klasser) som hanterar webbsförfrågor och respons. Till exempel, klassen LuckyControllerTwig innehåller samtliga routes såsom <i>me, about, lucky</i> osv. I controller används <i>render()</i> för att hänvisa till en Twig-fil som ligger i templates mappen, exempelvis route <i>report</i> anropar <i>report.html.twig</i>. Twig filer innehåller variabler, loopar och if-satser. Med twig håller koden ren och läsbar. Både layouter och block är återanvändbara.</p>
+        <p>Artikeln PHP The Right Way</p>
+        <p>TIL: jag har fått lära mig om hur man strukterar kod med mvc arkitektur, samt att jobba mer med twig och php språk.</p>
+    </section>
+
+    <section id="kmom02">
+        <h2>Redovisningstext kmom02</h2>
+        <p>Write something here</p>
+    </section>
+
+    <section id="kmom03">
+        <h2>Redovisningstext kmom03</h2>
+        <p>Write something here</p>
+    </section>
+
+    <section id="kmom04">
+        <h2>Redovisningstext kmom04</h2>
+        <p>Write something here</p>
+    </section>
+
+    <section id="kmom05">
+        <h2>Redovisningstext kmom05</h2>
+        <p>Write something here</p>
+    </section>
+
+    <section id="kmom06">
+        <h2>Redovisningstext kmom06</h2>
+        <p>Write something here</p>
+    </section>
+
+    <section id="kmom10">
+        <h2>Redovisningstext kmom10</h2>
+        <p>Write something here</p>
+    </section>
+{% endblock %}

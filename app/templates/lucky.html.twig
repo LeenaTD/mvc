@@ -1,0 +1,11 @@
+{% extends "base.html.twig" %}
+
+{% block title %}Magic number{% endblock %}
+
+{% block body %}
+    <h1>Magic number</h1>
+    <p>Your lucky number är: {{ number }}</p>
+    <div class="wrapper-rotation">
+        <img src="{{ asset('img/' ~ cookie) }}" alt="random cookies" class="cookie-img" style="transform: rotate({{ rotation }}deg);">
+    </div>
+{% endblock %}

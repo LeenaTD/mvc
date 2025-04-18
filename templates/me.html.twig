@@ -1,0 +1,17 @@
+{% extends "base.html.twig" %}
+
+{% block title %}Me sida{% endblock %}
+
+
+{% block body %}
+    <h1>Me sida</h1>
+    <p>Vem är jag?</p>
+    <a href="{{ asset('img/me.jpg') }}">
+        <img src="{{ asset('img/me.jpg') }}" alt="" class="me-img">
+    </a>
+    <p>Hej</p>
+    <p>Mitt namn är Leena Thuy Dung och jag påbörjade mina studier i BHT sedan förra höstterminen, med inrikning Webbprogrammering på distans - 120 hp.</p>
+    <p>Mina dagar brukar fyllas upp med att jobba deltid inom skolan, sedan studera hemifrån på kvällar samt under helger. Att studera programmering är väldigt roligt och givande. Tiden går ofta fort när man arbetar med problemlösning för att sedan sätta igång att koda.</p>
+    <p>På fritiden tycker jag om att lyssna på poddar, ta promenader och även läsa nyheter samt e-böcker.</p>
+    <p>Jag ser fram emot att lära mig och utveckla mig under kursens gång. Vi syns!</p>
+{% endblock %}

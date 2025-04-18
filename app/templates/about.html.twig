@@ -1,0 +1,31 @@
+{% extends "base.html.twig" %}
+
+{% block title %}About{% endblock %}
+
+
+{% block body %}
+    <h1>Om kursen mvc</h1>
+
+    <div class="two-col-layout">
+        <div class="left-col">
+            <p>Kursen fokuserar på objektorienterade programmeringstekniker i språket PHP. Det handlar om att bygga webbapplikationer med klasser och objekt samt att dela dem i olika komponenter. På det viset blir det lättare att felsöka och testa vilket gör det mer effektiv när man jobbar i team.</p>
+            <p>Syftet av kursen är att utveckla och driftsätta webbapplikationer där objektorienterade programmering i ramverk tillsammans med databaser, samt att kunna hantera olika verktyg och miljöer som används vid webbutveckling.</p>
+            <a href="{{ asset('img/about.jpg') }}">
+                <img src="{{ asset('img/about.png') }}" alt="" class="about-img">
+            </a>
+            <p>MVC arkitektur är ett av de mest grundläggande arkitekturmönstren delad upp i tre huvudkomponenter Model, View och Controller. En vy presenterar data för användaren medan controllern hanterar användarinteraktioner genom att prata med modellen och vyn för att uppdatera dess tillstånd. Modellen lagrar data och dess logik i applikationen. MVC gör det lättare att förstå strukturen av programmet. Koden är återanvändbar. Det gör även lättare att testa och underhålla. </p>
+        </div>
+
+        <div class="right-col">
+            <h2>Github</h2>
+            <p>Kursens Git-repo:</p>
+            <a href="https://github.com/dbwebb-se/mvc">Git-repo</a>
+            <p>Min egna Git-repo:</p>
+            <a href="https://github.com/LeenaTD">Egna Git-repo</a>
+        </div>
+    </div>
+
+    {# <a href="{{ asset('img/glider.svg') }}">
+        <img src="{{ asset('img/glider.svg') }}" alt="">
+    </a> #}
+{% endblock %}

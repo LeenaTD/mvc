@@ -1,0 +1,40 @@
+{% extends "base.html.twig" %}
+
+{% block title %}Langding page{% endblock %}
+
+
+{% block body %}
+    <h1>Langding page - API docs</h1>
+
+    {# Show description side by side routes and its method
+    <ul>
+        {% for apiRoute in apiRoutes %}
+            <li>
+                <strong>{{ apiRoute.path }}</strong> - <strong>{{ apiRoute.method }}</strong> {{ apiRoute.description }}
+            </li>
+        {% endfor %}
+    </ul>
+    #}
+
+
+    {# Click on a link to read its description #}
+    <ul>
+        {% for key, apiRoute in apiRoutes %}
+            <li>
+                {# generate eg. /api and ?apiRoute=quote #}
+                <a href="{{ path('landingPage', { apiRoute: key }) }}">
+                    {{ apiRoute.path }}
+                </a>
+            </li>
+        {% endfor %}
+    </ul>
+
+
+    {% if selectedRoute %}
+        <h2>Description for {{ selectedRoute.path }}</h2>
+        <p>{{ selectedRoute.method }} - {{ selectedRoute.description }}</p>
+    {% endif %}
+
+
+
+{% endblock %}

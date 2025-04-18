@@ -1,0 +1,271 @@
+<?php
+
+use Twig\Environment;
+use Twig\Error\LoaderError;
+use Twig\Error\RuntimeError;
+use Twig\Extension\CoreExtension;
+use Twig\Extension\SandboxExtension;
+use Twig\Markup;
+use Twig\Sandbox\SecurityError;
+use Twig\Sandbox\SecurityNotAllowedTagError;
+use Twig\Sandbox\SecurityNotAllowedFilterError;
+use Twig\Sandbox\SecurityNotAllowedFunctionError;
+use Twig\Source;
+use Twig\Template;
+use Twig\TemplateWrapper;
+
+/* report.html.twig */
+class __TwigTemplate_5edc7b00bc43957b3d4238b131bcbfde extends Template
+{
+    private Source $source;
+    /**
+     * @var array<string, Template>
+     */
+    private array $macros = [];
+
+    public function __construct(Environment $env)
+    {
+        parent::__construct($env);
+
+        $this->source = $this->getSourceContext();
+
+        $this->blocks = [
+            'title' => [$this, 'block_title'],
+            'body' => [$this, 'block_body'],
+        ];
+    }
+
+    protected function doGetParent(array $context): bool|string|Template|TemplateWrapper
+    {
+        // line 1
+        return "base.html.twig";
+    }
+
+    protected function doDisplay(array $context, array $blocks = []): iterable
+    {
+        $macros = $this->macros;
+        $__internal_5a27a8ba21ca79b61932376b2fa922d2 = $this->extensions["Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension"];
+        $__internal_5a27a8ba21ca79b61932376b2fa922d2->enter($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "template", "report.html.twig"));
+
+        $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
+        $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "template", "report.html.twig"));
+
+        $this->parent = $this->loadTemplate("base.html.twig", "report.html.twig", 1);
+        yield from $this->parent->unwrap()->yield($context, array_merge($this->blocks, $blocks));
+        
+        $__internal_5a27a8ba21ca79b61932376b2fa922d2->leave($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof);
+
+        
+        $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
+
+    }
+
+    // line 3
+    /**
+     * @return iterable<null|scalar|\Stringable>
+     */
+    public function block_title(array $context, array $blocks = []): iterable
+    {
+        $macros = $this->macros;
+        $__internal_5a27a8ba21ca79b61932376b2fa922d2 = $this->extensions["Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension"];
+        $__internal_5a27a8ba21ca79b61932376b2fa922d2->enter($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "title"));
+
+        $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
+        $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "title"));
+
+        yield "Report";
+        
+        $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
+
+        
+        $__internal_5a27a8ba21ca79b61932376b2fa922d2->leave($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof);
+
+        yield from [];
+    }
+
+    // line 6
+    /**
+     * @return iterable<null|scalar|\Stringable>
+     */
+    public function block_body(array $context, array $blocks = []): iterable
+    {
+        $macros = $this->macros;
+        $__internal_5a27a8ba21ca79b61932376b2fa922d2 = $this->extensions["Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension"];
+        $__internal_5a27a8ba21ca79b61932376b2fa922d2->enter($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body"));
+
+        $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
+        $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body"));
+
+        // line 7
+        yield "    <h1>Report</h1>
+    <h2>Report sidan inkluderar samtliga redovisningstexter för varje kursmoment.</h2>
+    <nav class=\"nav-report\">
+        <ul>
+            <li><a href=\"";
+        // line 11
+        yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("report");
+        yield "#kmom01\">kmom01</a></li>
+            <li><a href=\"";
+        // line 12
+        yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("report");
+        yield "#kmom02\">kmom02</a></li>
+            <li><a href=\"";
+        // line 13
+        yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("report");
+        yield "#kmom03\">kmom03</a></li>
+            <li><a href=\"";
+        // line 14
+        yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("report");
+        yield "#kmom04\">kmom04</a></li>
+            <li><a href=\"";
+        // line 15
+        yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("report");
+        yield "#kmom05\">kmom05</a></li>
+            <li><a href=\"";
+        // line 16
+        yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("report");
+        yield "#kmom06\">kmom06</a></li>
+            <li><a href=\"";
+        // line 17
+        yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("report");
+        yield "#kmom10\">kmom10</a></li>
+        </ul>
+    </nav>
+
+    <section id=\"kmom01\">
+        <h2>Redovisningstext kmom01</h2>
+        <p>Jag fick lära mig en del av objektorientering under kursen OOPython, dock är det fortfarande klurigt och svårt att hantera. Jag fick även öva med att skapa routes samt att jobba med objekt och klasser. Det kändes som en introduktion kurs av objektorienterad programmering.</p>
+        <p>För att komma igång med klasser och objekt, är det väsenligt att förstå och urskilja samtliga begrepp, exmpelvis en klass är lik en mall för att skapa objekt medan ett objekt är en instans av en klass. En variabel är definierad inuti en klass och den kan vara publik eller privat. Metoder är funktioner som beskriver vad objektet kan göra. Även konstruktor och ärv är viktiga att förstå när man börjar med klasser.</p>
+        <p>Koden i uppgiften me/report är uppdelad i olika komponenter. Controller mappen innehåller alla controller (klasser) som hanterar webbsförfrågor och respons. Till exempel, klassen LuckyControllerTwig innehåller samtliga routes såsom <i>me, about, lucky</i> osv. I controller används <i>render()</i> för att hänvisa till en Twig-fil som ligger i templates mappen, exempelvis route <i>report</i> anropar <i>report.html.twig</i>. Twig filer innehåller variabler, loopar och if-satser. Med twig hålls koden ren och läsbar. Både layouter och block är återanvändbara.</p>
+        <p>PHP The Right Way: Artikeln är inte bara en instruktionsbok utan också en referens för utvecklare. Dess syfte är att vägleda utvecklaren att skriva PHP koden på ett effektivt och hållbart sätt.</p>
+        <p>De delar som jag personligen tycker är intressanta, är Code Style Guide, Coding Pratices och Templating. Dessa delar rekommenderar att utvecklaren skriver PHP enligt Framework Interop Group såsom PSR-1 eller PSR-12 som standard eftersom koden är lättläst. Samtidigt har många ramverk, exempelvis Symfony och Laravel, tillämpat dessa stilar. De fokuserar även på på hur utvecklaren kan separera PHP och HTML för att koden ska hållas stilren. De föreslår att använda templating som Twig eller Brainy i stället för en blandning av PHP och HTML. Att skriva tester är ett av flera områden som jag skulle vilja läsa mer och utveckla mig mer med eftersom det hjälper till att säkerställa att koden fungerar som planerat.</p>
+        <p>TIL: jag har fått lära mig om hur man strukterar kod med mvc arkitektur, samt att jobba mer med twig och php språk.</p>
+    </section>
+
+    <section id=\"kmom02\">
+        <h2>Redovisningstext kmom02</h2>
+        <p>Write something here</p>
+    </section>
+
+    <section id=\"kmom03\">
+        <h2>Redovisningstext kmom03</h2>
+        <p>Write something here</p>
+    </section>
+
+    <section id=\"kmom04\">
+        <h2>Redovisningstext kmom04</h2>
+        <p>Write something here</p>
+    </section>
+
+    <section id=\"kmom05\">
+        <h2>Redovisningstext kmom05</h2>
+        <p>Write something here</p>
+    </section>
+
+    <section id=\"kmom06\">
+        <h2>Redovisningstext kmom06</h2>
+        <p>Write something here</p>
+    </section>
+
+    <section id=\"kmom10\">
+        <h2>Redovisningstext kmom10</h2>
+        <p>Write something here</p>
+    </section>
+";
+        
+        $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
+
+        
+        $__internal_5a27a8ba21ca79b61932376b2fa922d2->leave($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof);
+
+        yield from [];
+    }
+
+    /**
+     * @codeCoverageIgnore
+     */
+    public function getTemplateName(): string
+    {
+        return "report.html.twig";
+    }
+
+    /**
+     * @codeCoverageIgnore
+     */
+    public function isTraitable(): bool
+    {
+        return false;
+    }
+
+    /**
+     * @codeCoverageIgnore
+     */
+    public function getDebugInfo(): array
+    {
+        return array (  130 => 17,  126 => 16,  122 => 15,  118 => 14,  114 => 13,  110 => 12,  106 => 11,  100 => 7,  87 => 6,  64 => 3,  41 => 1,);
+    }
+
+    public function getSourceContext(): Source
+    {
+        return new Source("{% extends \"base.html.twig\" %}
+
+{% block title %}Report{% endblock %}
+
+
+{% block body %}
+    <h1>Report</h1>
+    <h2>Report sidan inkluderar samtliga redovisningstexter för varje kursmoment.</h2>
+    <nav class=\"nav-report\">
+        <ul>
+            <li><a href=\"{{ path('report') }}#kmom01\">kmom01</a></li>
+            <li><a href=\"{{ path('report') }}#kmom02\">kmom02</a></li>
+            <li><a href=\"{{ path('report') }}#kmom03\">kmom03</a></li>
+            <li><a href=\"{{ path('report') }}#kmom04\">kmom04</a></li>
+            <li><a href=\"{{ path('report') }}#kmom05\">kmom05</a></li>
+            <li><a href=\"{{ path('report') }}#kmom06\">kmom06</a></li>
+            <li><a href=\"{{ path('report') }}#kmom10\">kmom10</a></li>
+        </ul>
+    </nav>
+
+    <section id=\"kmom01\">
+        <h2>Redovisningstext kmom01</h2>
+        <p>Jag fick lära mig en del av objektorientering under kursen OOPython, dock är det fortfarande klurigt och svårt att hantera. Jag fick även öva med att skapa routes samt att jobba med objekt och klasser. Det kändes som en introduktion kurs av objektorienterad programmering.</p>
+        <p>För att komma igång med klasser och objekt, är det väsenligt att förstå och urskilja samtliga begrepp, exmpelvis en klass är lik en mall för att skapa objekt medan ett objekt är en instans av en klass. En variabel är definierad inuti en klass och den kan vara publik eller privat. Metoder är funktioner som beskriver vad objektet kan göra. Även konstruktor och ärv är viktiga att förstå när man börjar med klasser.</p>
+        <p>Koden i uppgiften me/report är uppdelad i olika komponenter. Controller mappen innehåller alla controller (klasser) som hanterar webbsförfrågor och respons. Till exempel, klassen LuckyControllerTwig innehåller samtliga routes såsom <i>me, about, lucky</i> osv. I controller används <i>render()</i> för att hänvisa till en Twig-fil som ligger i templates mappen, exempelvis route <i>report</i> anropar <i>report.html.twig</i>. Twig filer innehåller variabler, loopar och if-satser. Med twig hålls koden ren och läsbar. Både layouter och block är återanvändbara.</p>
+        <p>PHP The Right Way: Artikeln är inte bara en instruktionsbok utan också en referens för utvecklare. Dess syfte är att vägleda utvecklaren att skriva PHP koden på ett effektivt och hållbart sätt.</p>
+        <p>De delar som jag personligen tycker är intressanta, är Code Style Guide, Coding Pratices och Templating. Dessa delar rekommenderar att utvecklaren skriver PHP enligt Framework Interop Group såsom PSR-1 eller PSR-12 som standard eftersom koden är lättläst. Samtidigt har många ramverk, exempelvis Symfony och Laravel, tillämpat dessa stilar. De fokuserar även på på hur utvecklaren kan separera PHP och HTML för att koden ska hållas stilren. De föreslår att använda templating som Twig eller Brainy i stället för en blandning av PHP och HTML. Att skriva tester är ett av flera områden som jag skulle vilja läsa mer och utveckla mig mer med eftersom det hjälper till att säkerställa att koden fungerar som planerat.</p>
+        <p>TIL: jag har fått lära mig om hur man strukterar kod med mvc arkitektur, samt att jobba mer med twig och php språk.</p>
+    </section>
+
+    <section id=\"kmom02\">
+        <h2>Redovisningstext kmom02</h2>
+        <p>Write something here</p>
+    </section>
+
+    <section id=\"kmom03\">
+        <h2>Redovisningstext kmom03</h2>
+        <p>Write something here</p>
+    </section>
+
+    <section id=\"kmom04\">
+        <h2>Redovisningstext kmom04</h2>
+        <p>Write something here</p>
+    </section>
+
+    <section id=\"kmom05\">
+        <h2>Redovisningstext kmom05</h2>
+        <p>Write something here</p>
+    </section>
+
+    <section id=\"kmom06\">
+        <h2>Redovisningstext kmom06</h2>
+        <p>Write something here</p>
+    </section>
+
+    <section id=\"kmom10\">
+        <h2>Redovisningstext kmom10</h2>
+        <p>Write something here</p>
+    </section>
+{% endblock %}", "report.html.twig", "/home/cubby/dbwebb-kurser/mvc/me/report/templates/report.html.twig");
+    }
+}
