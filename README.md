@@ -5,7 +5,7 @@
 MVC - kmom01
 ---
 
-## Instruction
+## Instruction for cloning repot
 
 Make sure to have these installed:
 - PHP
