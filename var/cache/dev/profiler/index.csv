@@ -2287,3 +2287,7 @@ d68a0d,127.0.0.1,GET,http://127.0.0.1:8000/card,1747153029,,200,request
 90892e,127.0.0.1,GET,http://127.0.0.1:8000/about,1747153661,,200,request
 334e7d,127.0.0.1,GET,http://127.0.0.1:8000/card,1747153661,,200,request
 22b2a0,127.0.0.1,GET,http://127.0.0.1:8000/game/pig/init,1747153662,,200,request
+b31435,127.0.0.1,GET,http://127.0.0.1:8000/game/pig/init,1747154670,,200,request
+cd3ef0,127.0.0.1,GET,http://127.0.0.1:8000/favicon.ico,1747154670,f816f9,404,request
+f816f9,127.0.0.1,GET,http://127.0.0.1:8000/favicon.ico,1747154670,,404,request
+751e38,127.0.0.1,GET,http://127.0.0.1:8000/report,1747154672,,200,request
