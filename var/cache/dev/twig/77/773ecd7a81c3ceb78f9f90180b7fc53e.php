@@ -233,6 +233,6 @@ class __TwigTemplate_d9c8e59413319687d3a6ebfa75d10a39 extends Template
     word-wrap: break-word;
     word-break: break-all;
 }
-", "@WebProfiler/Profiler/open.css.twig", "/home/cubby/dbwebb-kurser/mvc/me/kmom01/symfony/app/vendor/symfony/web-profiler-bundle/Resources/views/Profiler/open.css.twig");
+", "@WebProfiler/Profiler/open.css.twig", "/home/cubby/dbwebb-kurser/mvc/me/report/vendor/symfony/web-profiler-bundle/Resources/views/Profiler/open.css.twig");
     }
 }

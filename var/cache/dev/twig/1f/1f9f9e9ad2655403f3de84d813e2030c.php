@@ -305,6 +305,6 @@ class __TwigTemplate_fe12b823ad84d776d50e54986210b1ce extends Template
         });
     </script>
 {% endblock %}
-", "@WebProfiler/Profiler/open.html.twig", "/home/cubby/dbwebb-kurser/mvc/me/kmom01/symfony/app/vendor/symfony/web-profiler-bundle/Resources/views/Profiler/open.html.twig");
+", "@WebProfiler/Profiler/open.html.twig", "/home/cubby/dbwebb-kurser/mvc/me/report/vendor/symfony/web-profiler-bundle/Resources/views/Profiler/open.html.twig");
     }
 }

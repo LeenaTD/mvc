@@ -142,6 +142,6 @@ class __TwigTemplate_4c1f37237f93f80b2d48d2b4bed4552c extends Template
     </tbody>
 </table>
 </div>
-", "@WebProfiler/Profiler/table.html.twig", "/home/cubby/dbwebb-kurser/mvc/me/kmom01/symfony/app/vendor/symfony/web-profiler-bundle/Resources/views/Profiler/table.html.twig");
+", "@WebProfiler/Profiler/table.html.twig", "/home/cubby/dbwebb-kurser/mvc/me/report/vendor/symfony/web-profiler-bundle/Resources/views/Profiler/table.html.twig");
     }
 }

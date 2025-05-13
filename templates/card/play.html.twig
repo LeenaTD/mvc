@@ -1,0 +1,73 @@
+{% extends "base.html.twig" %}
+
+{% block title %}Play the card game{% endblock %}
+
+{% block body %}
+
+<h1>Card Game</h1>
+
+<div class="buttons">
+    <form method="get" action="{{ path('card_deck') }}">
+        <input type="submit" value="Deck">
+    </form>
+
+    <form method="post" action="{{ path('card_deck_shuffle') }}">
+        <input type="submit" value="Shuffle">
+    </form>
+
+    {#
+    <form method="post" action="{{ path('card_deck_draw_many') }}">
+        <input type="number" name="num" min="1" max="52" value="1">
+        <input type="submit" value="Draw">
+    </form>
+    #}
+
+    <form method="post" onsubmit="
+        this.action = '{{ path('card_deck_draw_many', { number: 0 })|replace({ '0': '' }) }}' + this.num.value;
+    ">
+        <input type="number" id="num" name="num" min="1" max="52" value="1">
+        <input type="submit" value="Draw cards">
+    </form>
+
+
+    <form method="get" action="{{ path('card_deck_draw_one') }}">
+        <input type="submit" value="Draw 1 card">
+    </form>
+</div>
+
+
+{#
+{% if cards is defined %}
+    <h2>Shuffle</h2>
+    {% for card in cards %}
+        <span class="showCard">{{ card.getAsString() }}</span>
+    {% endfor %}
+{% endif %}
+#}
+
+
+
+{% if cards is defined %}
+    <h2>
+        {% if remaining is defined %}
+            Draw cards
+        {% else %}
+            Full deck
+        {% endif %}
+    </h2>
+        {% for card in cards %}
+            <span class="showCard">{{ card.getAsString() }}</span>
+        {% endfor %}
+
+    <br>
+    {% if remaining is defined %}
+        <span>Cards left in deck: {{ remaining }}</span>
+    {% endif %}
+
+{% endif %}
+
+
+
+
+
+{% endblock %}

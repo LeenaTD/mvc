@@ -1,0 +1,22 @@
+{% extends "base.html.twig" %}
+
+{% block title %}Session Data{% endblock %}
+
+{% block body %}
+<h1>Session Data</h1>
+{{ include('flash.html.twig') }}
+
+{% if session is empty %}
+    <p>No session found</p>
+{% else %}
+    <pre>{{ dump(session) }}</pre>
+
+    <form method="post" action="{{ path('page_session_delete') }}">
+        <button type="submit">
+            Clear session
+        </button>
+    </form>
+{% endif %}
+
+
+{% endblock %}

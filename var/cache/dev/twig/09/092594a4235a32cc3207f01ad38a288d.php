@@ -147,6 +147,6 @@ class __TwigTemplate_8e563eda8fc1c5b8640b6f0b174df7a1 extends Template
     <h1>Magic number</h1>
     <p>Welcome to my awesome magical homepage.</p>
     <p>This is the current magic Mega number: {{ number }}</p>
-{% endblock %}", "lucky_number.html.twig", "/home/cubby/dbwebb-kurser/mvc/me/kmom01/symfony/app/templates/lucky_number.html.twig");
+{% endblock %}", "lucky_number.html.twig", "/home/cubby/dbwebb-kurser/mvc/me/report/templates/lucky_number.html.twig");
     }
 }

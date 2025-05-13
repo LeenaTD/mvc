@@ -1,0 +1,15 @@
+{% extends "base.html.twig" %}
+
+{% block title %}Test api/deck/draw one card with POST{% endblock %}
+
+{% block body %}
+<h1>Test api/deck/draw one card with POST</h1>
+
+
+<form method="post" action="{{ path('api_deck_draw_one') }}">
+        <button type="submit">
+            Draw 1 card
+        </button>
+</form>
+
+{% endblock %}

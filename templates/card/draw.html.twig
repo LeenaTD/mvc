@@ -1,0 +1,22 @@
+{% extends "base.html.twig" %}
+
+{% block title %}Draw cards{% endblock %}
+
+{% block body %}
+<h1>Draw cards</h1>
+
+
+{% if cards is defined %}
+    {% for card in cards %}
+        <span class="showCard">{{ card.getAsString() }}</span>
+    {% endfor %}
+{% endif %}
+
+<br>
+{% if remaining is defined %}
+        <span>Cards left in deck: {{ remaining }}</span>
+{% endif %}
+
+
+
+{% endblock %}

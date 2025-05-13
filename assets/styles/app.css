@@ -167,3 +167,53 @@ header {
     padding: 10px 20px;
     display: flex;
 }
+
+
+
+/* pig game */
+/* flash message */
+.flash-notice {
+    padding: 0.5em;
+    color: #004085;
+    background-color: #cce5ff;
+    border-color: #b8daff;
+}
+.flash-notice:before {
+    content: "ⓘ";
+}
+
+.flash-warning {
+    padding: 0.5em;
+    color: #856404;
+    background-color: #fff3cd;
+    border-color: #ffeeba;
+}
+.flash-warning:before {
+    content: "⚠";
+}
+
+
+.flash-success {
+    padding: 0.5em;
+    color: #111111;
+    background-color: #5bd161;
+    border-color: #0b5f0f;
+}
+
+
+/* card game */
+/* style the cards in horizontal way */
+.showCard {
+    font-size: 5rem;
+    display: inline-block;
+    line-height: 1;
+}
+
+
+
+/* style all four buttons */
+.buttons {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 1rem;
+}

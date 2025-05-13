@@ -141,6 +141,6 @@ class __TwigTemplate_a6a2a1d98918ac26997d0642896b71d9 extends Template
 {% block body %}
     <h1>Home</h1>
 {% endblock %}
-", "home.html.twig", "/home/cubby/dbwebb-kurser/mvc/me/kmom01/symfony/app/templates/home.html.twig");
+", "home.html.twig", "/home/cubby/dbwebb-kurser/mvc/me/report/templates/home.html.twig");
     }
 }

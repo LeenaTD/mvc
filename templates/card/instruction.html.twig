@@ -1,0 +1,25 @@
+{% extends "base.html.twig" %}
+
+{% block title %}Card game instruction{% endblock %}
+
+{% block body %}
+<h1>Card game instruction</h1>
+
+<p>Press <strong>Deck</strong> to show all 52 cards sorting by suits and values. Press <strong>Shuffle</strong> to shuffle all cards. <strong>Draw</strong> one or more cards from the shuffled deck. The drawn cards will be shown, and the number of the remaining cards will be updated.</p>
+<form method="post" action="{{ path('card_init') }}">
+    <input type="submit" value="Let's play">
+</form>
+
+<h2>Card Game structure and classes:</h2>
+<p>There are four classes: Card, CardGraphic, CardHand and DeckOfCards.</p>
+<p>The Card class is a base class that represents a standard card with suit and value, but not in a graphic way. The CardGraphic class is a subclass inheriting from the Card class but also adding unicode characters for the cards. It overrides the method getAsString in the Card class with unicode card symbols.</p>
+<p>The CardHand class represents the hand of a player. It can draw one or more cards from a deck. The drawn cards will be stored in a private array. The CardHand and Card (or CardGraphic) forms a composition relationship because the CardHand holds cards and if the hand is discarded, the holding cards will no longer exist. The CardHand provides following methods: add cards, count cards, check which cards are stored in hand and show cards as strings.</p>
+<p>The DeckOfCards consists of 52 cards sorting by suits and values. When a deck object is created, it will be filled with 52 cards automatically. This class provides method Shuffle that shuffles the order of all cards. The method Draw removes a number of card from the deck. Each time the player draws, the number of cards in the deck will decrease. In order to check the number of cards left in deck, the methods getNumberOfCardsLeftInDeck will return the count and getRemainingDeck will return the left cards in form of an array. The relationship between DeckOfCards and Card (or CardGraphic) is also a composition because the deck consists of the cards and the cards are gone if the deck is removed.</p>
+
+
+<h2>UML diagram:</h2>
+<a href="{{ asset('img/CardGame.drawio.png') }}">
+    <img src="{{ asset('img/CardGame.drawio.png') }}" alt="">
+</a>
+
+{% endblock %}

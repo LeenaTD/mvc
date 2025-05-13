@@ -103,30 +103,42 @@ class __TwigTemplate_17f1d64356f39aebd92f868d5531bd05 extends Template
                     <li><a href=\"";
         // line 31
         yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("landingPage");
-        yield "\">Landing page</a></li>
+        yield "\">API docs</a></li>
                     <li><a href=\"";
         // line 32
         yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("quote");
         yield "\">Quotes</a></li>
-                    ";
+                    <li><a href=\"";
+        // line 33
+        yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("pig_init_get");
+        yield "\">Pig Game</a></li>
+                    <li><a href=\"";
         // line 34
-        yield "                    ";
+        yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("card_instruction");
+        yield "\">Card Game</a></li>
+                    <li><a href=\"";
         // line 35
+        yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("page_session");
+        yield "\">Session</a></li>
+                    ";
+        // line 37
+        yield "                    ";
+        // line 38
         yield "                    
                 </ul>
             </nav>
 
             <div class=\"content\">
                 ";
-        // line 40
+        // line 43
         yield from $this->unwrap()->yieldBlock('body', $context, $blocks);
-        // line 41
+        // line 44
         yield "            </div>
 
             <footer class=\"site-footer\">
                 <div class=\"left-footer\">
                     &copy; ";
-        // line 45
+        // line 48
         yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Twig\Extension\CoreExtension']->formatDate("", "Y"), "html", null, true);
         yield "
                 </div>
@@ -252,7 +264,7 @@ class __TwigTemplate_17f1d64356f39aebd92f868d5531bd05 extends Template
         yield from [];
     }
 
-    // line 40
+    // line 43
     /**
      * @return iterable<null|scalar|\Stringable>
      */
@@ -295,7 +307,7 @@ class __TwigTemplate_17f1d64356f39aebd92f868d5531bd05 extends Template
      */
     public function getDebugInfo(): array
     {
-        return array (  256 => 40,  233 => 16,  222 => 17,  220 => 16,  215 => 15,  202 => 14,  188 => 11,  175 => 10,  152 => 5,  130 => 45,  124 => 41,  122 => 40,  115 => 35,  113 => 34,  109 => 32,  105 => 31,  101 => 30,  97 => 29,  93 => 28,  89 => 27,  80 => 21,  75 => 18,  73 => 14,  70 => 13,  68 => 10,  65 => 9,  59 => 5,  53 => 1,);
+        return array (  268 => 43,  245 => 16,  234 => 17,  232 => 16,  227 => 15,  214 => 14,  200 => 11,  187 => 10,  164 => 5,  142 => 48,  136 => 44,  134 => 43,  127 => 38,  125 => 37,  121 => 35,  117 => 34,  113 => 33,  109 => 32,  105 => 31,  101 => 30,  97 => 29,  93 => 28,  89 => 27,  80 => 21,  75 => 18,  73 => 14,  70 => 13,  68 => 10,  65 => 9,  59 => 5,  53 => 1,);
     }
 
     public function getSourceContext(): Source
@@ -330,8 +342,11 @@ class __TwigTemplate_17f1d64356f39aebd92f868d5531bd05 extends Template
                     <li><a href=\"{{ path('about') }}\">About</a></li>
                     <li><a href=\"{{ path('report') }}\">Report</a></li>
                     <li><a href=\"{{ path('lucky') }}\">Lucky</a></li>
-                    <li><a href=\"{{ path('landingPage') }}\">Landing page</a></li>
+                    <li><a href=\"{{ path('landingPage') }}\">API docs</a></li>
                     <li><a href=\"{{ path('quote') }}\">Quotes</a></li>
+                    <li><a href=\"{{ path('pig_init_get') }}\">Pig Game</a></li>
+                    <li><a href=\"{{ path('card_instruction') }}\">Card Game</a></li>
+                    <li><a href=\"{{ path('page_session') }}\">Session</a></li>
                     {# <li><a href=\"{{ path('home') }}\">Home</a></li> #}
                     {# <li><a href=\"{{ path('lucky_number') }}\">Lucky number</a></li> #}
                     

@@ -1,0 +1,40 @@
+{% extends "base.html.twig" %}
+
+{% block title %}Test api/deck/draw many cards with POST{% endblock %}
+
+{% block body %}
+<h1>Test api/deck/draw/:number with POST</h1>
+
+
+{# Test with fixed number of cards #}
+{#
+<form method="post" action="{{ path('api_deck_draw_many', { number: 5 }) }}">
+        <button type="submit">
+            api draw 5 via POST
+        </button>
+</form>
+
+<form method="post" action="{{ path('api_deck_draw_many', { number: 10 }) }}">
+        <button type="submit">
+            api draw 10 via POST
+        </button>
+</form>
+
+<form method="post" action="{{ path('api_deck_draw_many', { number: 12 }) }}">
+        <button type="submit">
+            api draw 12 via POST
+        </button>
+</form>
+#}
+
+
+
+<form method="post" onsubmit="
+    this.action= '{{ path('api_deck_draw_many', { number: 0 }) }}' + this.num.value;
+">
+    <input type="number" id="num" name="num" min="1" max="52" value="1">
+    <input type="submit" value="Draw cards">
+</form>
+
+
+{% endblock %}

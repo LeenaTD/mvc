@@ -98,6 +98,26 @@ class LuckyControllerTwig extends AbstractController
                 'path' => '/api/quote',
                 'method' => 'GET',
                 'description' => 'Return an inspirational quote with date and timestamp.',
+            ],
+            'deck' => [
+                'path' => '/api/deck',
+                'method' => 'GET',
+                'description' => 'Return a deck of cards sorting by suit and value.',
+            ],
+            'shuffle' => [
+                'path' => '/api/deck/shuffle',
+                'method' => 'POST',
+                'description' => 'Shuffle the cards. Use /test/api/shuffle to test shuffle with POST.',
+            ],
+            'draw' => [
+                'path' => '/api/deck/draw',
+                'method' => 'POST',
+                'description' => 'Draw a card, show the drawn card and also show the number of the cards left. Use /test/api/draw to test draw a card with POST.',
+            ],
+            'many' => [
+                'path' => '/api/deck/draw/{number}',
+                'method' => 'POST',
+                'description' => 'Draw one or more cards, show the drawn cards and also show the number of the cards left. Use /test/api/draw/many to test draw one or more cards with POST.',
             ]
         ];
 
